@@ -1,0 +1,13 @@
+@import "../abstract/mixins";
+@import "../abstract/variables";
+
+.header {
+  margin-bottom: 2rem;
+
+  h1 {
+    padding-top: 0.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 300;
+  }
+}

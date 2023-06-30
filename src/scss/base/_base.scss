@@ -1,0 +1,73 @@
+@import "../abstract/variables";
+@import "../abstract/mixins";
+@import "../base/typography";
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+@include media-md {
+  html {
+    font-size: 15px;
+  }
+}
+
+@include media-sm {
+  html {
+    font-size: 14.5px;
+  }
+}
+
+@include media-extra-sm {
+  html {
+    font-size: 14px;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  color: $primary-color;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0;
+  background-color: $primary-background-color;
+  font-weight: 300;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70.5rem;
+  padding-left: 0.875rem;
+  padding-right: 0.875rem;
+  width: 100%;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
