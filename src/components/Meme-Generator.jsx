@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import MemeImage from "../containers/Meme-Image";
 import MemeSources from "../containers/Meme-Sources";
 import MemeText from "../containers/Meme-Text";
+import MemeTextPos from "../containers/Meme-Text-Pos";
 
 // DefaultImage
 import DefaultImage from "../assets/choose-image.webp";
@@ -26,6 +27,10 @@ const MemeGenerator = () => {
       <div className="meme__info">
         <MemeSources setImgUrl={setImgUrl} />
         <MemeText setParagraphText={setParagraphText} />
+        <MemeTextPos
+          paragraphPos={paragraphPos}
+          setParagraphPos={setParagraphPos}
+        />
       </div>
     </div>
   );

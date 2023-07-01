@@ -1,13 +1,13 @@
 @import "../abstract/mixins";
 @import "../abstract/variables";
 
-.meme__texts {
-  margin-bottom: 1.5rem;
-  .meme__texts__header {
+.meme__texts-position {
+  .meme__texts-position__header {
     @include meme-section-header;
   }
 
-  .meme__texts__input {
+  .meme__texts-position__input {
+    margin-right: 2rem;
     @include primary-input;
   }
 }
