@@ -4,4 +4,10 @@
 .meme {
   display: flex;
   justify-content: space-around;
+
+  .meme__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
