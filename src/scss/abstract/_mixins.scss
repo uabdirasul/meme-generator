@@ -15,3 +15,15 @@
     @content;
   }
 }
+
+@mixin primary-input {
+  border-radius: 3px;
+  border: none;
+  padding: 0.4rem;
+}
+
+@mixin meme-section-header {
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+}

@@ -1,75 +1,7 @@
 @import "../abstract/mixins";
 @import "../abstract/variables";
 
-.meme-generator {
+.meme {
   display: flex;
-
-  .meme {
-    position: relative;
-
-    .meme__image {
-      width: 25rem;
-      margin-right: 3rem;
-    }
-
-    .meme__text {
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-color: transparent;
-      outline: none;
-      border: none;
-      width: 90%;
-      overflow-y: hidden;
-      resize: none;
-      color: #000;
-      cursor: move;
-
-      &::placeholder {
-        color: #000;
-      }
-    }
-  }
-
-  .meme-source {
-    .meme-source__text {
-      display: flex;
-      align-items: center;
-
-      svg {
-        fill: #fff;
-        margin-left: 0.2rem;
-      }
-    }
-
-    input {
-      border-radius: 8px;
-      padding: 0.2rem;
-      width: 15rem;
-
-      &::placeholder {
-        color: $primary-color;
-      }
-
-      &[type="text"] {
-        margin-right: 1rem;
-      }
-    }
-
-    .meme-source__image-link {
-      vertical-align: middle;
-    }
-
-    .img-source-upload-icon {
-      cursor: pointer;
-      vertical-align: middle;
-      background-color: $primary-color;
-      padding: 0.5rem;
-      border-radius: 8px;
-    }
-
-    #img-source-file {
-      display: none;
-    }
-  }
+  justify-content: space-around;
 }

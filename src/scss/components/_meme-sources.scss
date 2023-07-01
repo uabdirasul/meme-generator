@@ -1,0 +1,29 @@
+@import "../abstract/mixins";
+@import "../abstract/variables";
+
+.meme__sources {
+  margin-bottom: 1.5rem;
+
+  .meme__sources__header {
+    @include meme-section-header;
+  }
+
+  .meme__sources__types {
+    display: flex;
+    align-items: center;
+
+    .meme__sources__image-link {
+      margin-right: 2rem;
+      @include primary-input;
+    }
+
+    .img-source-upload-icon {
+      cursor: pointer;
+      fill: $primary-color;
+    }
+
+    .meme__sources__image-file {
+      display: none;
+    }
+  }
+}

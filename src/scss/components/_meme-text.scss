@@ -1,0 +1,12 @@
+@import "../abstract/mixins";
+@import "../abstract/variables";
+
+.meme__texts {
+  .meme__texts__header {
+    @include meme-section-header;
+  }
+
+  .meme__texts__input {
+    @include primary-input;
+  }
+}
