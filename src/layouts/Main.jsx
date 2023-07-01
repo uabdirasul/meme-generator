@@ -5,7 +5,7 @@ import MemeGenerator from "../components/Meme-Generator";
 
 const Main = () => {
   return (
-    <main className="main">
+    <main className="main container">
       <MemeGenerator />
     </main>
   );

@@ -5,8 +5,9 @@
   position: relative;
 
   .meme__image {
-    width: 500px;
-    height: 500px;
+    width: 31rem;
+    height: 31rem;
+    object-fit: contain;
   }
 
   .meme__default__text {

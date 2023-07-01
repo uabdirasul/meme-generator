@@ -17,7 +17,7 @@ const MemeGenerator = () => {
   const [paragraphText, setParagraphText] = useState("Default Text");
 
   return (
-    <div className="meme container">
+    <div className="meme">
       <MemeImage
         imgUrl={imgUrl}
         paragraphPos={paragraphPos}
