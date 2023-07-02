@@ -2,6 +2,8 @@
 @import "../abstract/variables";
 
 .meme__texts-position {
+  margin-bottom: 1.5rem;
+
   .meme__texts-position__header {
     @include meme-section-header;
   }

@@ -1,0 +1,10 @@
+@import "../abstract/mixins";
+@import "../abstract/variables";
+
+.meme__colors {
+  margin-bottom: 1.5rem;
+
+  .meme__colors__header {
+    @include meme-section-header;
+  }
+}
