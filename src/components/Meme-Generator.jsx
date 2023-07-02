@@ -6,6 +6,7 @@ import MemeSources from "../components/Meme-Sources";
 import MemeText from "../components/Meme-Text";
 import MemeTextPos from "../components/Meme-Text-Pos";
 import MemeTextColor from "./Meme-Text-Color";
+import MemeTextSize from "./Meme-Text-Size";
 
 // DefaultImage
 import DefaultImage from "../assets/choose-image.webp";
@@ -20,6 +21,9 @@ const MemeGenerator = () => {
   const [paragraphColor, setParagraphColor] = useState({
     color: "#eab2a0",
   });
+  const [paragraphSize, setParagraphSize] = useState({
+    fontSize: "16px",
+  });
 
   return (
     <div className="meme">
@@ -28,6 +32,7 @@ const MemeGenerator = () => {
         paragraphPos={paragraphPos}
         paragraphText={paragraphText}
         paragraphColor={paragraphColor}
+        paragraphSize={paragraphSize}
       />
       <div className="meme__info">
         <MemeSources setImgUrl={setImgUrl} />
@@ -39,6 +44,10 @@ const MemeGenerator = () => {
         <MemeTextColor
           paragraphColor={paragraphColor}
           setParagraphColor={setParagraphColor}
+        />
+        <MemeTextSize
+          paragraphSize={paragraphSize}
+          setParagraphSize={setParagraphSize}
         />
       </div>
     </div>

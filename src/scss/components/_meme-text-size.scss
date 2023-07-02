@@ -1,0 +1,14 @@
+@import "../abstract/mixins";
+@import "../abstract/variables";
+
+.meme__texts__size {
+  margin-bottom: 1.5rem;
+
+  .meme__texts__size__header {
+    @include meme-section-header;
+  }
+
+  .meme__texts__size__input {
+    @include primary-input;
+  }
+}
