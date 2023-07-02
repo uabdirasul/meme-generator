@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 
 // Components
-import MemeImage from "../containers/Meme-Image";
-import MemeSources from "../containers/Meme-Sources";
-import MemeText from "../containers/Meme-Text";
-import MemeTextPos from "../containers/Meme-Text-Pos";
+import MemeImage from "../components/Meme-Image";
+import MemeSources from "../components/Meme-Sources";
+import MemeText from "../components/Meme-Text";
+import MemeTextPos from "../components/Meme-Text-Pos";
 
 // DefaultImage
 import DefaultImage from "../assets/choose-image.webp";
