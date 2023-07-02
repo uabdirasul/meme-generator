@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, createRef } from "react";
 
 // Components
 import MemeImage from "../components/Meme-Image";
@@ -7,6 +7,7 @@ import MemeText from "../components/Meme-Text";
 import MemeTextPos from "../components/Meme-Text-Pos";
 import MemeTextColor from "./Meme-Text-Color";
 import MemeTextSize from "./Meme-Text-Size";
+import DownloadMeme from "./DownloadMeme";
 
 // DefaultImage
 import DefaultImage from "../assets/choose-image.webp";
@@ -25,6 +26,8 @@ const MemeGenerator = () => {
     fontSize: "16px",
   });
 
+  const memeImageRef = createRef(null);
+
   return (
     <div className="meme">
       <MemeImage
@@ -33,6 +36,7 @@ const MemeGenerator = () => {
         paragraphText={paragraphText}
         paragraphColor={paragraphColor}
         paragraphSize={paragraphSize}
+        memeImageRef={memeImageRef}
       />
       <div className="meme__info">
         <MemeSources setImgUrl={setImgUrl} />
@@ -49,6 +53,7 @@ const MemeGenerator = () => {
           paragraphSize={paragraphSize}
           setParagraphSize={setParagraphSize}
         />
+        <DownloadMeme memeImageRef={memeImageRef} />
       </div>
     </div>
   );

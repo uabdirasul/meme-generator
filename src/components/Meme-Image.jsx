@@ -9,6 +9,7 @@ const MemeImage = ({
   paragraphText,
   paragraphColor,
   paragraphSize,
+  memeImageRef,
 }) => {
   const combinedStyles = {
     ...paragraphPos,
@@ -16,8 +17,14 @@ const MemeImage = ({
     ...paragraphSize,
   };
   return (
-    <div className="meme__image-wrapper">
-      <img className="meme__image" src={imgUrl} alt="Meme Image" />
+    <div className="meme__image-wrapper" ref={memeImageRef}>
+      <img
+        className="meme__image"
+        src={imgUrl}
+        alt="Meme Image"
+        width="496"
+        height="496"
+      />
       <p className="meme__default__text" style={combinedStyles}>
         {paragraphText}
       </p>

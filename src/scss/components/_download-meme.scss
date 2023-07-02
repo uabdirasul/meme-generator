@@ -1,0 +1,16 @@
+@import "../abstract/mixins";
+@import "../abstract/variables";
+
+.download-meme {
+  margin-bottom: 1.5rem;
+
+  .download-meme__button {
+    border: none;
+    border-radius: 3px;
+    color: $primary-background-color;
+    cursor: pointer;
+    background-color: $primary-color;
+    font-weight: 500;
+    padding: 0.4rem;
+  }
+}
