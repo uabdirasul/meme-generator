@@ -5,13 +5,13 @@ import "../scss/components/_meme-text-position.scss";
 
 const MemeTextPos = ({ paragraphPos, setParagraphPos }) => {
   return (
-    <div className="meme__texts-position">
-      <h2 className="meme__texts-position__header">Meme Text Position</h2>
+    <div className="meme__texts__position">
+      <h2 className="meme__texts__position__header">Meme Text Position</h2>
       <label className="meme__text__label" htmlFor="meme__text__x-pos">
         x:{" "}
       </label>
       <input
-        className="meme__texts-position__input"
+        className="meme__texts__position__input"
         type="number"
         name="meme__text__x-pos"
         id="meme__text__x-pos"
