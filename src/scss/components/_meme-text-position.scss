@@ -11,5 +11,6 @@
   .meme__texts__position__input {
     margin-right: 2rem;
     @include primary-input;
+    width: 3rem;
   }
 }

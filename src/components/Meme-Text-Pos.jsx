@@ -29,7 +29,7 @@ const MemeTextPos = ({ paragraphPos, setParagraphPos }) => {
         y:{" "}
       </label>
       <input
-        className="meme__texts-position__input"
+        className="meme__texts__position__input"
         type="number"
         name="meme__text__y-pos"
         min="0"
