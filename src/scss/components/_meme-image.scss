@@ -4,12 +4,12 @@
 .meme__image-wrapper {
   position: relative;
   width: 31rem;
-  height: 31rem;
 
   .meme__image {
     width: 31rem;
-    height: 31rem;
+    height: 100%;
     object-fit: contain;
+    display: block;
   }
 
   .meme__default__text {
